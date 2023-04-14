@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: Home(),
   ),
   );
@@ -17,15 +17,15 @@ class Home extends StatelessWidget {
       appBar: AppBar(
           centerTitle: true,
           title: const Text(
-            'Peppermint Plasters',
+            'Hamico',
             style: TextStyle(
               fontSize: 25.0,
               fontWeight: FontWeight.bold,
-              color: Colors.blue,
+              color: Colors.white,
               fontFamily: 'Pacifico',
             ),
           ),
-        backgroundColor: Colors.tealAccent,
+        backgroundColor: Colors.purple[500],
     ),
 
       drawer: Drawer(
@@ -35,12 +35,12 @@ class Home extends StatelessWidget {
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.purple,
               ),
               child: Text('Drawer Header'),
             ),
             ListTile(
-              leading: Icon(
+              leading: const Icon(
                 Icons.home,
               ),
               title: const Text('Page 1'),
@@ -48,21 +48,33 @@ class Home extends StatelessWidget {
                 Navigator.pop(context);
               },
             ),
+
             ListTile(
-              leading: Icon(
-                Icons.train,
+              leading: const Icon(
+                Icons.home,
               ),
               title: const Text('Page 2'),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
+
+            ListTile(
+              leading: const Icon(
+                Icons.access_time_filled,
+              ),
+              title: const Text('Page 3'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+
           ],
         ),
       ),
       body: Center(
         child: Column(
-          children: [
+          children: const [
             SizedBox(
               height: 50,
             ),
