@@ -15,31 +15,59 @@ class Home extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-          centerTitle: false,
-          title: Row(
-              children: const <Widget>[
-              Align(
-                alignment: Alignment.centerLeft,
-                child: IconButton(
-                onPressed: null,
-                icon: Icon(Icons.menu),
-              ),
-              ),
-                Text(
-                  'Peppermint Plasters',
-                  style: TextStyle(
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blue,
-                    fontFamily: 'Pacifico',
-                  ),
-                ),
-              ]
+          centerTitle: true,
+          title: const Text(
+            'Peppermint Plasters',
+            style: TextStyle(
+              fontSize: 25.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.blue,
+              fontFamily: 'Pacifico',
+            ),
           ),
         backgroundColor: Colors.tealAccent,
     ),
 
+      drawer: Drawer(
+        child: ListView(
+          // Important: Remove any padding from the ListView.
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text('Drawer Header'),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.home,
+              ),
+              title: const Text('Page 1'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.train,
+              ),
+              title: const Text('Page 2'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
+      ),
       body: Center(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 50,
+            ),
+          ],
+        ),
       ),
 
       floatingActionButton: FloatingActionButton(
