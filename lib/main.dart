@@ -16,16 +16,16 @@ class Home extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-          centerTitle: true,
-          title: const Text(
-            'Hamico',
-            style: TextStyle(
-              fontSize: 25.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-              fontFamily: 'Pacifico',
-            ),
+        centerTitle: true,
+        title: const Text(
+          'Hamico',
+          style: TextStyle(
+            fontSize: 25.0,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            fontFamily: 'Pacifico',
           ),
+        ),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.person),
@@ -35,7 +35,7 @@ class Home extends StatelessWidget {
         ],
 
         backgroundColor: Colors.purple[500],
-    ),
+      ),
 
       drawer: Drawer(
         child: ListView(
@@ -101,4 +101,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
