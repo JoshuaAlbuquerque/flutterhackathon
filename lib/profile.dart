@@ -25,9 +25,12 @@ class Profile extends StatelessWidget {
           backgroundColor: CSSColors.darkRed,
       ),
 
-      body: const Center(
-        child: Text('hello fellow humans'),
-      ),
+        body: Center(
+          child: Image.asset('assets/something.png'),
+        ),
+
+
+
 
 
       backgroundColor: Colors.lightBlue[50],
