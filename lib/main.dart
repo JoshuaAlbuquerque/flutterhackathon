@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_grid_button/flutter_grid_button.dart';
+import 'package:css_colors/css_colors.dart';
+
 import 'WaterIntake.dart';
 
 void main() {
@@ -34,7 +37,7 @@ class Home extends StatelessWidget {
           )
         ],
 
-        backgroundColor: Colors.purple[500],
+        backgroundColor: CSSColors.greenYellow,
     ),
 
       drawer: Drawer(
@@ -81,15 +84,17 @@ class Home extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(
-        child: Column(
-          children: const [
-            SizedBox(
-              height: 50,
-            ),
-          ],
+      body:GridView(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
         ),
+        children: [
+          Image.network('https://picsum.photos/250?image=1'),
+          Image.network('https://picsum.photos/250?image=2'),
+
+        ],
       ),
+
 
       floatingActionButton: FloatingActionButton(
         onPressed: null,
