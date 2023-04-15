@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'profile.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -27,59 +28,21 @@ class Home extends StatelessWidget {
           ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.save),
+            icon: Icon(Icons.person),
             tooltip: "Save Todo and Retrun to List",
-            onPressed: () {},
-          )
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Profile()),
+              );
+            },
+          ),
         ],
 
         backgroundColor: Colors.purple[500],
     ),
 
-      drawer: Drawer(
-        child: ListView(
-          // Important: Remove any padding from the ListView.
-          padding: EdgeInsets.zero,
-          children: [
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.purple,
-              ),
-              child: Text('Drawer Header'),
-            ),
-            ListTile(
-              leading: const Icon(
-                Icons.home,
-              ),
-              title: const Text('Page 1'),
-              onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => const WaterIntake()));
-              },
-            ),
 
-            ListTile(
-              leading: const Icon(
-                Icons.home,
-              ),
-              title: const Text('Page 2'),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-
-            ListTile(
-              leading: const Icon(
-                Icons.access_time_filled,
-              ),
-              title: const Text('Page 3'),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-
-          ],
-        ),
-      ),
       body: Center(
         child: Column(
           children: const [
@@ -94,7 +57,6 @@ class Home extends StatelessWidget {
         onPressed: null,
         child: Image.asset('assets/arrow.png'),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
 
       backgroundColor: Colors.lightBlue[50],
     );
