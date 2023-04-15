@@ -42,7 +42,7 @@ import 'profile.dart';
             ),
           ],
 
-          backgroundColor: Colors.purple[500],
+          backgroundColor: CSSColors.springGreen,
       ),
 
 
