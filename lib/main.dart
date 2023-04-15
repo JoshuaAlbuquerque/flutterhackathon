@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
- import 'profile.dart';
+import 'package:flutter_grid_button/flutter_grid_button.dart';
+import 'package:css_colors/css_colors.dart';
+
+import 'profile.dart';
 
  void main() {
    runApp(const MaterialApp(
@@ -84,77 +87,39 @@ import 'package:flutter/material.dart';
               fontFamily: 'Pacifico',
             ),
           ),
-          backgroundColor: Colors.purple[500],
-        ),
-
-        drawer: Drawer(
-          child: ListView(
-            // Important: Remove any padding from the ListView.
-            padding: EdgeInsets.zero,
-            children: [
-              const DrawerHeader(
-                decoration: BoxDecoration(
-                  color: Colors.purple,
-                ),
-                child: Text('Drawer Header'),
-              ),
-              ListTile(
-                leading: const Icon(
-                  Icons.home,
-                ),
-                title: const Text('Page 1'),
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Home()));
-                },
-              ),
-
-              ListTile(
-                leading: const Icon(
-                  Icons.home,
-                ),
-                title: const Text('Page 2'),
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              ),
-
-              ListTile(
-                leading: const Icon(
-                  Icons.access_time_filled,
-                ),
-                title: const Text('Page 3'),
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              ),
-
-            ],
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.person),
+            tooltip: "Save Todo and Retrun to List",
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Profile()),
+              );
+            },
           ),
-        ),
-        body: Center(
-          child: Column(
-            children: const [
-              SizedBox(
-                height: 50,
-              ),
-              Text (
-                  'hello',
-                  textAlign: TextAlign.center,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
-              ),
-            ],
-          ),
-        ),
+        ],
 
-        floatingActionButton: FloatingActionButton(
-          onPressed: null,
-          child: Image.asset('assets/arrow.png'),
-        ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        backgroundColor: CSSColors.greenYellow,
+    ),
 
-        backgroundColor: Colors.lightBlue[50],
-      );
-    }
+
+      body: Center(
+        child: Column(
+          children: const [
+            SizedBox(
+              height: 50,
+            ),
+          ],
+        ),
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: null,
+        child: Image.asset('assets/arrow.png'),
+      ),
+
+      backgroundColor: Colors.lightBlue[50],
+    );
   }
-
+}
