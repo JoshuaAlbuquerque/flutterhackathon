@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'main.dart';
+import 'package:css_colors/css_colors.dart';
+import 'package:flutter/widgets.dart';
 
 class Profile extends StatelessWidget {
   const Profile({Key? key}) : super(key: key);
@@ -20,8 +22,13 @@ class Profile extends StatelessWidget {
           ),
         ),
 
-        backgroundColor: Colors.purple[500],
+          backgroundColor: CSSColors.darkRed,
       ),
+
+      body: const Center(
+        child: Text('hello fellow humans'),
+      ),
+
 
       backgroundColor: Colors.lightBlue[50],
     );
