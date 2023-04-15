@@ -1,41 +1,26 @@
 import 'package:flutter/material.dart';
-import 'WaterIntake.dart';
+import 'main.dart';
 
-void main() {
-  runApp(const MaterialApp(
-    home: Home(),
-  ),
-  );
-}
-
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+class WaterIntake extends StatelessWidget {
+  const WaterIntake({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
 
       appBar: AppBar(
-          centerTitle: true,
-          title: const Text(
-            'Hamico',
-            style: TextStyle(
-              fontSize: 25.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-              fontFamily: 'Pacifico',
-            ),
+        centerTitle: true,
+        title: const Text(
+          'Water Intake',
+          style: TextStyle(
+            fontSize: 25.0,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            fontFamily: 'Pacifico',
           ),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.person),
-            tooltip: "Save Todo and Retrun to List",
-            onPressed: () {},
-          )
-        ],
-
+        ),
         backgroundColor: Colors.purple[500],
-    ),
+      ),
 
       drawer: Drawer(
         child: ListView(
@@ -54,7 +39,7 @@ class Home extends StatelessWidget {
               ),
               title: const Text('Page 1'),
               onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => const WaterIntake()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Home()));
               },
             ),
 
@@ -87,6 +72,12 @@ class Home extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
+            Text (
+              'hello',
+              textAlign: TextAlign.center,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
+            ),
           ],
         ),
       ),
@@ -101,4 +92,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
