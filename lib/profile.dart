@@ -54,11 +54,11 @@ class Profile extends StatelessWidget {
             const Expanded(
               child: SizedBox(),
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 // Handle button press
               },
-              child: Text('Click Me!'),
+              child: const Text('Click Me!'),
             ),
           ],
         ),
