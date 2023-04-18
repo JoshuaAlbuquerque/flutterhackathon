@@ -71,7 +71,7 @@ import 'profile.dart';
                       child: Stack(
                         children: [
                           Image.asset(
-                            'assets/arrow.png',
+                            'assets/house.png',
                             fit: BoxFit.cover,
                           ),
                           Positioned(
