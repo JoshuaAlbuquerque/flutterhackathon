@@ -45,23 +45,64 @@ import 'profile.dart';
       ),
 
 
-        body: Column(
-          children: const <Widget>[
-            SizedBox(
-            height: 50,
-            child: Align(
-              alignment: Alignment.center,
-              child: Text(
-                'welcome ! mortals',
-                textAlign: TextAlign.center,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontWeight: FontWeight.bold),
+        body: Builder(builder: (context) {
+          return Center(
+              child: Padding(
+            padding: const EdgeInsets.all(18.0),
+          child: SizedBox(
+            width: 500, // set the desired width of the GridButton
+            height: 300,
+            child: GridButton(
+              borderColor: Colors.grey[300],
+              borderWidth: 25,
+              onPressed: (dynamic val) {
+                print('Button $val pressed');
+              },
+              items: [
+                [
+                  GridButtonItem(
+                    title: "Red",
+                    color: Colors.red.withOpacity(0.8),
+                    borderRadius: Radius.circular(25).x,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => const Profile()),
+                        );
+                      },
+                      child: Container(),
+                    ),
 
-              ),
+                  ),
+                  GridButtonItem(
+                    title: "Blue",
+                    color: Colors.blue.withOpacity(0.8),
+                    borderRadius: Radius.circular(25).x,
+                  ),
+                ],
+                [
+                  GridButtonItem(
+                    title: "Green",
+                    color: Colors.green.withOpacity(0.8),
+                    borderRadius: Radius.circular(25).x,
+                  ),
+                  GridButtonItem(
+                    title: "Yellow",
+                    color: Colors.yellow.withOpacity(0.8),
+                    borderRadius: Radius.circular(25).x,
+                  ),
+                ],
+              ],
+
             ),
           ),
-        ],
-      ),
+          ),
+          );
+        }),
+
+
+
+
 
         floatingActionButton: FloatingActionButton(
           onPressed: null,
