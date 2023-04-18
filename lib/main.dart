@@ -68,8 +68,30 @@ import 'profile.dart';
                           MaterialPageRoute(builder: (context) => const Profile()),
                         );
                       },
-                      child: Image.asset('assets/arrow.png',
-                        fit: BoxFit.cover,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'assets/arrow.png',
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            left: 0,
+                            right: 50,
+                            bottom: 0,
+                            child: Container(
+                              padding: EdgeInsets.symmetric(vertical: 8),
+                              alignment: Alignment.center,
+                              child: Text(
+                                'test',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -84,8 +106,30 @@ import 'profile.dart';
                           MaterialPageRoute(builder: (context) => const Profile()),
                         );
                       },
-                      child: Image.asset('assets/arrow.png',
-                        fit: BoxFit.cover,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'assets/arrow.png',
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            left: 0,
+                            right: 50,
+                            bottom: 0,
+                            child: Container(
+                              padding: EdgeInsets.symmetric(vertical: 8),
+                              alignment: Alignment.center,
+                              child: Text(
+                                'test',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -103,8 +147,30 @@ import 'profile.dart';
                           MaterialPageRoute(builder: (context) => const Profile()),
                         );
                       },
-                      child: Image.asset('assets/arrow.png',
-                        fit: BoxFit.cover,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'assets/arrow.png',
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            left: 0,
+                            right: 50,
+                            bottom: 0,
+                            child: Container(
+                              padding: EdgeInsets.symmetric(vertical: 8),
+                              alignment: Alignment.center,
+                              child: Text(
+                                'test',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -119,11 +185,34 @@ import 'profile.dart';
                           MaterialPageRoute(builder: (context) => const Profile()),
                         );
                       },
-                      child: Image.asset('assets/arrow.png',
-                        fit: BoxFit.cover,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'assets/arrow.png',
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            left: 0,
+                            right: 50,
+                            bottom: 0,
+                            child: Container(
+                              padding: EdgeInsets.symmetric(vertical: 8),
+                              alignment: Alignment.center,
+                              child: Text(
+                                'test',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
+
                 ],
               ],
 
@@ -132,9 +221,6 @@ import 'profile.dart';
           ),
           );
         }),
-
-
-
 
 
         floatingActionButton: FloatingActionButton(
