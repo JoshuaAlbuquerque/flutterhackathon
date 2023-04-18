@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:css_colors/css_colors.dart';
-import 'package:flutter/widgets.dart';
 
 class Profile extends StatelessWidget {
   const Profile({Key? key}) : super(key: key);
@@ -30,14 +29,17 @@ class Profile extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            CircleAvatar(
-              radius: 50.0,
-              child: ClipOval(
-                child: Image.asset(
-                  'assets/profile pic.jpg',
-                  fit: BoxFit.cover,
-                  width: 100.0,
-                  height: 100.0,
+            Padding(
+              padding: const EdgeInsets.only(top: 60.0),
+              child: CircleAvatar(
+                radius: 50.0,
+                child: ClipOval(
+                  child: Image.asset(
+                    'assets/profile pic.jpg',
+                    fit: BoxFit.cover,
+                    width: 100.0,
+                    height: 100.0,
+                  ),
                 ),
               ),
             ),
@@ -51,21 +53,61 @@ class Profile extends StatelessWidget {
               ),
             ),
 
-            const Expanded(
-              child: SizedBox(),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                // Handle button press
-              },
-              child: const Text('Click Me!'),
+            const SizedBox(height: 20.0),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 10.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  // Show pop-up warning
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        title: const Text('Warning'),
+                        content: const Text('Are you sure you want to proceed?'),
+                        actions: [
+                          TextButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            style: TextButton.styleFrom(
+                              primary: Colors.red, // Set text color here
+                            ),
+                            child: const Text('Cancel'),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              // Handle button press
+                              Navigator.of(context).pop();
+                            },style: ElevatedButton.styleFrom(
+                            primary: Colors.red, // Set background color here
+                          ),
+                            child: const Text('Proceed'),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.redAccent,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 50.0,
+                    vertical: 15.0,
+                  ),
+                ),
+                child: const Text(
+                  'Log Out',
+                  style: TextStyle(fontSize: 18.0),
+                ),
+              ),
             ),
           ],
         ),
       ),
-
-
-      backgroundColor: Colors.lightBlue[50],
     );
   }
 }
