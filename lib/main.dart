@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_grid_button/flutter_grid_button.dart';
 import 'package:css_colors/css_colors.dart';
 import 'profile.dart';
+import 'house.dart';
 
  void main() {
    runApp(const MaterialApp(
@@ -182,7 +183,7 @@ import 'profile.dart';
                     child: GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => const Profile()),
+                          MaterialPageRoute(builder: (context) => const house()),
                         );
                       },
                       child: Stack(
