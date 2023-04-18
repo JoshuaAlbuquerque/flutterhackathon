@@ -68,6 +68,9 @@ import 'profile.dart';
                           MaterialPageRoute(builder: (context) => const Profile()),
                         );
                       },
+                      child: Image.asset('assets/arrow.png',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
 
@@ -81,6 +84,9 @@ import 'profile.dart';
                           MaterialPageRoute(builder: (context) => const Profile()),
                         );
                       },
+                      child: Image.asset('assets/arrow.png',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
 
@@ -97,6 +103,9 @@ import 'profile.dart';
                           MaterialPageRoute(builder: (context) => const Profile()),
                         );
                       },
+                      child: Image.asset('assets/arrow.png',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
 
@@ -110,6 +119,9 @@ import 'profile.dart';
                           MaterialPageRoute(builder: (context) => const Profile()),
                         );
                       },
+                      child: Image.asset('assets/arrow.png',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ],
