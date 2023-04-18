@@ -25,12 +25,34 @@ class Profile extends StatelessWidget {
           backgroundColor: CSSColors.darkRed,
       ),
 
-        body: Center(
-          child: Image.asset('assets/something.png'),
+
+      body: Container(
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            CircleAvatar(
+              radius: 50.0,
+              child: ClipOval(
+                child: Image.asset(
+                  'assets/profile pic.jpg',
+                  fit: BoxFit.cover,
+                  width: 100.0,
+                  height: 100.0,
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            const Text(
+              'Ben Chang',
+              style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
         ),
-
-
-
+      ),
 
 
       backgroundColor: Colors.lightBlue[50],
