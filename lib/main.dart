@@ -70,27 +70,51 @@ import 'profile.dart';
                           MaterialPageRoute(builder: (context) => const Profile()),
                         );
                       },
-                      child: Container(),
                     ),
-
                   ),
+
                   GridButtonItem(
                     title: "Blue",
                     color: Colors.blue.withOpacity(0.8),
                     borderRadius: Radius.circular(25).x,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => const Profile()),
+                        );
+                      },
+                    ),
                   ),
+
                 ],
+
                 [
                   GridButtonItem(
                     title: "Green",
                     color: Colors.green.withOpacity(0.8),
                     borderRadius: Radius.circular(25).x,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => const Profile()),
+                        );
+                      },
+                    ),
                   ),
+
                   GridButtonItem(
                     title: "Yellow",
                     color: Colors.yellow.withOpacity(0.8),
                     borderRadius: Radius.circular(25).x,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => const Profile()),
+                        );
+                      },
+                    ),
                   ),
+
                 ],
               ],
 
