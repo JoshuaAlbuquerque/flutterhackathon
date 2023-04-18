@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
-import 'profile.dart';
 import 'package:css_colors/css_colors.dart';
 
-void main() => runApp(MyApp());
+class House extends StatelessWidget {
+  const House({Key? key}) : super(key: key);
 
-class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
         appBar: AppBar(
-        title: Text('Flutter Image Demo'),
+        title: const Text('Flutter Image Demo'),
     ),
     body: Center(
     child: Column(
