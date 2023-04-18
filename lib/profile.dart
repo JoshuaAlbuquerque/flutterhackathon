@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
 import 'package:css_colors/css_colors.dart';
-import 'package:flutter/widgets.dart';
 
 class Profile extends StatelessWidget {
   const Profile({Key? key}) : super(key: key);
@@ -42,7 +40,7 @@ class Profile extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             const Text(
               'Ben Chang',
               style: TextStyle(

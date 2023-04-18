@@ -20,7 +20,7 @@ import 'profile.dart';
         appBar: AppBar(
             centerTitle: true,
             title: const Text(
-              'Hamico',
+              'EcoVision',
               style: TextStyle(
                 fontSize: 25.0,
                 fontWeight: FontWeight.bold,
@@ -79,9 +79,9 @@ import 'profile.dart';
                             right: 50,
                             bottom: 0,
                             child: Container(
-                              padding: EdgeInsets.symmetric(vertical: 8),
+                              padding: const EdgeInsets.symmetric(vertical: 8),
                               alignment: Alignment.center,
-                              child: Text(
+                              child: const Text(
                                 'test',
                                 style: TextStyle(
                                   color: Colors.white,
@@ -117,9 +117,9 @@ import 'profile.dart';
                             right: 50,
                             bottom: 0,
                             child: Container(
-                              padding: EdgeInsets.symmetric(vertical: 8),
+                              padding: const EdgeInsets.symmetric(vertical: 8),
                               alignment: Alignment.center,
-                              child: Text(
+                              child: const Text(
                                 'test',
                                 style: TextStyle(
                                   color: Colors.white,
@@ -158,9 +158,9 @@ import 'profile.dart';
                             right: 50,
                             bottom: 0,
                             child: Container(
-                              padding: EdgeInsets.symmetric(vertical: 8),
+                              padding: const EdgeInsets.symmetric(vertical: 8),
                               alignment: Alignment.center,
-                              child: Text(
+                              child: const Text(
                                 'test',
                                 style: TextStyle(
                                   color: Colors.white,
@@ -196,9 +196,9 @@ import 'profile.dart';
                             right: 50,
                             bottom: 0,
                             child: Container(
-                              padding: EdgeInsets.symmetric(vertical: 8),
+                              padding: const EdgeInsets.symmetric(vertical: 8),
                               alignment: Alignment.center,
-                              child: Text(
+                              child: const Text(
                                 'test',
                                 style: TextStyle(
                                   color: Colors.white,
