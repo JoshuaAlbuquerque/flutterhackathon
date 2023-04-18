@@ -30,7 +30,7 @@ import 'profile.dart';
             ),
           actions: <Widget>[
             IconButton(
-              icon: Icon(Icons.person),
+              icon: const Icon(Icons.person),
               tooltip: "Save Todo and Retrun to List",
               onPressed: () {
                 Navigator.push(
@@ -53,17 +53,15 @@ import 'profile.dart';
             width: 500, // set the desired width of the GridButton
             height: 300,
             child: GridButton(
-              borderColor: Colors.grey[300],
+              borderColor: Colors.lightBlue[50],
               borderWidth: 25,
-              onPressed: (dynamic val) {
-                print('Button $val pressed');
-              },
+              onPressed: (dynamic val) {},
               items: [
                 [
                   GridButtonItem(
                     title: "Red",
                     color: Colors.red.withOpacity(0.8),
-                    borderRadius: Radius.circular(25).x,
+                    borderRadius: const Radius.circular(25).x,
                     child: GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(
@@ -76,7 +74,7 @@ import 'profile.dart';
                   GridButtonItem(
                     title: "Blue",
                     color: Colors.blue.withOpacity(0.8),
-                    borderRadius: Radius.circular(25).x,
+                    borderRadius: const Radius.circular(25).x,
                     child: GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(
@@ -92,7 +90,7 @@ import 'profile.dart';
                   GridButtonItem(
                     title: "Green",
                     color: Colors.green.withOpacity(0.8),
-                    borderRadius: Radius.circular(25).x,
+                    borderRadius: const Radius.circular(25).x,
                     child: GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(
@@ -105,7 +103,7 @@ import 'profile.dart';
                   GridButtonItem(
                     title: "Yellow",
                     color: Colors.yellow.withOpacity(0.8),
-                    borderRadius: Radius.circular(25).x,
+                    borderRadius: const Radius.circular(25).x,
                     child: GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(
@@ -114,7 +112,6 @@ import 'profile.dart';
                       },
                     ),
                   ),
-
                 ],
               ],
 
