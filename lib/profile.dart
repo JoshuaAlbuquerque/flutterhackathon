@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:css_colors/css_colors.dart';
+import 'package:flutter/widgets.dart';
 
 class Profile extends StatelessWidget {
   const Profile({Key? key}) : super(key: key);
@@ -40,6 +41,7 @@ class Profile extends StatelessWidget {
                 ),
               ),
             ),
+
             const SizedBox(height: 10.0),
             const Text(
               'Ben Chang',
@@ -47,6 +49,16 @@ class Profile extends StatelessWidget {
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
               ),
+            ),
+
+            const Expanded(
+              child: SizedBox(),
+            ),
+            RaisedButton(
+              onPressed: () {
+                // Handle button press
+              },
+              child: Text('Click Me!'),
             ),
           ],
         ),
