@@ -24,7 +24,6 @@ import 'house.dart';
               'EcoVision',
               style: TextStyle(
                 fontSize: 25.0,
-                fontWeight: FontWeight.bold,
                 color: Colors.white,
                 fontFamily: 'Cabin',
               ),
