@@ -45,11 +45,14 @@ class Profile extends StatelessWidget {
               ),
 
               const SizedBox(height: 10.0),
-              const Text(
-                'Ben Chang',
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
+              const Padding(
+                padding: EdgeInsets.only(bottom: 200.0),
+                child: Text(
+                  'Ben Chang',
+                  style: TextStyle(
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
 
@@ -161,7 +164,7 @@ class Profile extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    'Log Out',
+                    'Change Account',
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
