@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:css_colors/css_colors.dart';
 import 'package:flutter_grid_button/flutter_grid_button.dart';
-import 'profile.dart';
 
 class House extends StatelessWidget {
   const House({Key? key}) : super(key: key);
@@ -40,25 +39,59 @@ class House extends StatelessWidget {
                           context: context,
                           builder: (context) => Dialog(
                             backgroundColor: Colors.transparent,
-                            child: SizedBox(
-                              height: 300.0,
-                              child: Stack(
-                                children: [
-                                  Container(
-                                    decoration: const BoxDecoration(
-                                      image: DecorationImage(
-                                        image: AssetImage("assets/room2.png"),
-                                        fit: BoxFit.fill,
+                            child: Stack(
+                              children: [
+                                Container(
+                                  height: 300,
+                                  decoration: const BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage("assets/room2.png"),
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Positioned.fill(
+                                  child: Align(
+                                    alignment: Alignment.center,
+                                    child: ElevatedButton(
+                                      onPressed: () {
+                                        // Show a dropdown menu
+                                        showMenu(
+                                          context: context,
+                                          position: const RelativeRect.fromLTRB(0, 0, 0, 20),
+                                          items: [
+                                            const PopupMenuItem(
+                                              child: Text('Option 1'),
+                                              value: 1,
+                                            ),
+                                            const PopupMenuItem(
+                                              child: Text('Option 2'),
+                                              value: 2,
+                                            ),
+                                            const PopupMenuItem(
+                                              child: Text('Option 3'),
+                                              value: 3,
+                                            ),
+                                          ],
+                                        );
+                                      },
+                                      style: ElevatedButton.styleFrom(
+                                        primary: Colors.transparent,
+                                        shape: const CircleBorder(),
+                                      ),
+                                      child: const Text(
+                                        '',
                                       ),
                                     ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                         );
                       },
                       child: Container(
+                        height: 300,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage("assets/room2.png"),
@@ -72,8 +105,7 @@ class House extends StatelessWidget {
                               right: 50,
                               bottom: 0,
                               child: Container(
-                                padding: const EdgeInsets.symmetric(
-                                    vertical: 8),
+                                padding: const EdgeInsets.symmetric(vertical: 8),
                                 alignment: Alignment.center,
                                 child: const Text(
                                   'test',
@@ -99,25 +131,59 @@ class House extends StatelessWidget {
                           context: context,
                           builder: (context) => Dialog(
                             backgroundColor: Colors.transparent,
-                            child: SizedBox(
-                              height: 300.0,
-                              child: Stack(
-                                children: [
-                                  Container(
-                                    decoration: const BoxDecoration(
-                                      image: DecorationImage(
-                                        image: AssetImage("assets/room2.png"),
-                                        fit: BoxFit.fill,
+                            child: Stack(
+                              children: [
+                                Container(
+                                  height: 300,
+                                  decoration: const BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage("assets/room2.png"),
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Positioned.fill(
+                                  child: Align(
+                                    alignment: Alignment.center,
+                                    child: ElevatedButton(
+                                      onPressed: () {
+                                        // Show a dropdown menu
+                                        showMenu(
+                                          context: context,
+                                          position: const RelativeRect.fromLTRB(0, 0, 0, 20),
+                                          items: [
+                                            const PopupMenuItem(
+                                              child: Text('Option 1'),
+                                              value: 1,
+                                            ),
+                                            const PopupMenuItem(
+                                              child: Text('Option 2'),
+                                              value: 2,
+                                            ),
+                                            const PopupMenuItem(
+                                              child: Text('Option 3'),
+                                              value: 3,
+                                            ),
+                                          ],
+                                        );
+                                      },
+                                      style: ElevatedButton.styleFrom(
+                                        primary: Colors.transparent,
+                                        shape: const CircleBorder(),
+                                      ),
+                                      child: const Text(
+                                        '',
                                       ),
                                     ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                         );
                       },
                       child: Container(
+                        height: 300,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage("assets/room2.png"),
@@ -131,8 +197,7 @@ class House extends StatelessWidget {
                               right: 50,
                               bottom: 0,
                               child: Container(
-                                padding: const EdgeInsets.symmetric(
-                                    vertical: 8),
+                                padding: const EdgeInsets.symmetric(vertical: 8),
                                 alignment: Alignment.center,
                                 child: const Text(
                                   'test',
@@ -196,25 +261,59 @@ class House extends StatelessWidget {
                           context: context,
                           builder: (context) => Dialog(
                             backgroundColor: Colors.transparent,
-                            child: SizedBox(
-                              height: 300.0,
-                              child: Stack(
-                                children: [
-                                  Container(
-                                    decoration: const BoxDecoration(
-                                      image: DecorationImage(
-                                        image: AssetImage("assets/room1.png"),
-                                        fit: BoxFit.fill,
+                            child: Stack(
+                              children: [
+                                Container(
+                                  height: 300,
+                                  decoration: const BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage("assets/room1.png"),
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Positioned.fill(
+                                  child: Align(
+                                    alignment: Alignment.center,
+                                    child: ElevatedButton(
+                                      onPressed: () {
+                                        // Show a dropdown menu
+                                        showMenu(
+                                          context: context,
+                                          position: const RelativeRect.fromLTRB(0, 0, 0, 20),
+                                          items: [
+                                            const PopupMenuItem(
+                                              child: Text('Option 1'),
+                                              value: 1,
+                                            ),
+                                            const PopupMenuItem(
+                                              child: Text('Option 2'),
+                                              value: 2,
+                                            ),
+                                            const PopupMenuItem(
+                                              child: Text('Option 3'),
+                                              value: 3,
+                                            ),
+                                          ],
+                                        );
+                                      },
+                                      style: ElevatedButton.styleFrom(
+                                        primary: Colors.transparent,
+                                        shape: const CircleBorder(),
+                                      ),
+                                      child: const Text(
+                                        '',
                                       ),
                                     ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                         );
                       },
                       child: Container(
+                        height: 300,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage("assets/room1.png"),
@@ -228,8 +327,7 @@ class House extends StatelessWidget {
                               right: 50,
                               bottom: 0,
                               child: Container(
-                                padding: const EdgeInsets.symmetric(
-                                    vertical: 8),
+                                padding: const EdgeInsets.symmetric(vertical: 8),
                                 alignment: Alignment.center,
                                 child: const Text(
                                   'test',
@@ -255,25 +353,59 @@ class House extends StatelessWidget {
                           context: context,
                           builder: (context) => Dialog(
                             backgroundColor: Colors.transparent,
-                            child: SizedBox(
-                              height: 300.0,
-                              child: Stack(
-                                children: [
-                                  Container(
-                                    decoration: const BoxDecoration(
-                                      image: DecorationImage(
-                                        image: AssetImage("assets/room1.png"),
-                                        fit: BoxFit.fill,
+                            child: Stack(
+                              children: [
+                                Container(
+                                  height: 300,
+                                  decoration: const BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage("assets/room1.png"),
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Positioned.fill(
+                                  child: Align(
+                                    alignment: Alignment.center,
+                                    child: ElevatedButton(
+                                      onPressed: () {
+                                        // Show a dropdown menu
+                                        showMenu(
+                                          context: context,
+                                          position: const RelativeRect.fromLTRB(0, 0, 0, 20),
+                                          items: [
+                                            const PopupMenuItem(
+                                              child: Text('Option 1'),
+                                              value: 1,
+                                            ),
+                                            const PopupMenuItem(
+                                              child: Text('Option 2'),
+                                              value: 2,
+                                            ),
+                                            const PopupMenuItem(
+                                              child: Text('Option 3'),
+                                              value: 3,
+                                            ),
+                                          ],
+                                        );
+                                      },
+                                      style: ElevatedButton.styleFrom(
+                                        primary: Colors.transparent,
+                                        shape: const CircleBorder(),
+                                      ),
+                                      child: const Text(
+                                        '',
                                       ),
                                     ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                         );
                       },
                       child: Container(
+                        height: 300,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage("assets/room1.png"),
@@ -287,8 +419,7 @@ class House extends StatelessWidget {
                               right: 50,
                               bottom: 0,
                               child: Container(
-                                padding: const EdgeInsets.symmetric(
-                                    vertical: 8),
+                                padding: const EdgeInsets.symmetric(vertical: 8),
                                 alignment: Alignment.center,
                                 child: const Text(
                                   'test',
