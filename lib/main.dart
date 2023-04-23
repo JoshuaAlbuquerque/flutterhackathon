@@ -26,7 +26,7 @@ import 'house.dart';
                 fontSize: 25.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
-                fontFamily: 'Pacifico',
+                fontFamily: 'Cabin',
               ),
             ),
           actions: <Widget>[
