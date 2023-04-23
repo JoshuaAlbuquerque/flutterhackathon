@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:css_colors/css_colors.dart';
 import 'package:flutter_grid_button/flutter_grid_button.dart';
-import 'profile.dart';
 
 class House extends StatelessWidget {
   const House({Key? key}) : super(key: key);
