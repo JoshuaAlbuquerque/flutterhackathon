@@ -130,7 +130,7 @@ class Profile extends StatelessWidget {
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
                               ListTile(
-                                title: const Text("Option 1",
+                                title: const Text("Harvey Specter",
                                   textAlign: TextAlign.center,
                                 ),
                                 onTap: () {
@@ -138,7 +138,7 @@ class Profile extends StatelessWidget {
                                 },
                               ),
                               ListTile(
-                                title: const Text("Option 2",
+                                title: const Text("Cha Cha Slide",
                                   textAlign: TextAlign.center,
                                 ),
                                 onTap: () {
@@ -146,7 +146,7 @@ class Profile extends StatelessWidget {
                                 },
                               ),
                               ListTile(
-                                title: const Text("Option 3",
+                                title: const Text("Operational Drunk",
                                   textAlign: TextAlign.center,
                                 ),
                                 onTap: () {
