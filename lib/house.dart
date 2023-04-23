@@ -154,11 +154,7 @@ class House extends StatelessWidget {
                   GridButtonItem(
                     title: "corridor",
                     child: GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => const Profile()),
-                        );
-                      },
+                      onTap: () {},
                       child: Container(
                         decoration: const BoxDecoration(
                           image: DecorationImage(
