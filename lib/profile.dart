@@ -119,47 +119,62 @@ class Profile extends StatelessWidget {
 
                 child: ElevatedButton(
                   onPressed: () {
-                    // Show pop-up warning
                     showDialog(
                       context: context,
                       builder: (BuildContext context) {
                         return AlertDialog(
-                          title: const Text('Warning'),
-                          content: const Text(
-                              'Are you sure you want to proceed?'),
-                          actions: [
-
+                          title: const Text("Select an Account",
+                            textAlign: TextAlign.center,
+                          ),
+                          content: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: <Widget>[
+                              ListTile(
+                                title: const Text("Option 1",
+                                  textAlign: TextAlign.center,
+                                ),
+                                onTap: () {
+                                  // Do something when option 1 is selected
+                                },
+                              ),
+                              ListTile(
+                                title: const Text("Option 2",
+                                  textAlign: TextAlign.center,
+                                ),
+                                onTap: () {
+                                  // Do something when option 2 is selected
+                                },
+                              ),
+                              ListTile(
+                                title: const Text("Option 3",
+                                  textAlign: TextAlign.center,
+                                ),
+                                onTap: () {
+                                  // Do something when option 3 is selected
+                                },
+                              ),
+                            ],
+                          ),
+                          actions: <Widget>[
                             TextButton(
                               onPressed: () {
-                                Navigator.of(context).pop();
+                                Navigator.pop(context);
                               },
-                              style: TextButton.styleFrom(
-                                primary: Colors.red, // Set text color here
-                              ),
-                              child: const Text('Cancel'),
-                            ),
-
-                            ElevatedButton(
-                              onPressed: () {
-                                Navigator.of(context).pop();
-                              },
-                              style: ElevatedButton.styleFrom(
-                                primary: Colors.red,
-                              ),
-                              child: const Text('Proceed'),
+                              child: const Text("Cancel"),
                             ),
                           ],
                         );
                       },
                     );
                   },
+
                   style: ElevatedButton.styleFrom(
                     primary: Colors.redAccent,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 50.0,
+                      horizontal: 30.0,
                       vertical: 15.0,
                     ),
                   ),
