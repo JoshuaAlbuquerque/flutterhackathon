@@ -138,9 +138,7 @@ class Profile extends StatelessWidget {
                                     fit: BoxFit.cover,
                                   ),
                                 ),
-                                title: const Text("Harvey Specter",
-                                  textAlign: TextAlign.center,
-                                ),
+                                title: const Text("Harvey Specter"),
                                 onTap: () {
                                   // Do something when option 1 is selected
                                 },
@@ -154,9 +152,7 @@ class Profile extends StatelessWidget {
                                     fit: BoxFit.cover,
                                   ),
                                 ),
-                                title: const Text("Cha Cha Slide",
-                                  textAlign: TextAlign.center,
-                                ),
+                                title: const Text("Cha Cha Slide"),
                                 onTap: () {
                                   // Do something when option 2 is selected
                                 },
@@ -170,9 +166,21 @@ class Profile extends StatelessWidget {
                                     fit: BoxFit.cover,
                                   ),
                                 ),
-                                title: const Text("Operational Drunk",
-                                  textAlign: TextAlign.center,
+                                title: const Text("Operational Drunk"),
+                                onTap: () {
+                                  // Do something when option 3 is selected
+                                },
+                              ),
+                              ListTile(
+                                leading: ClipOval(
+                                  child: Image.asset(
+                                    'assets/plus-icon.jpg',
+                                    width: 50,
+                                    height: 50,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
+                                title: const Text("Add Account"),
                                 onTap: () {
                                   // Do something when option 3 is selected
                                 },
