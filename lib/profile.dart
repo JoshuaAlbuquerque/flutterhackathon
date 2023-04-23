@@ -130,6 +130,14 @@ class Profile extends StatelessWidget {
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
                               ListTile(
+                                leading: ClipOval(
+                                  child: Image.asset(
+                                    'assets/harvey.jpg',
+                                    width: 50,
+                                    height: 50,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                                 title: const Text("Harvey Specter",
                                   textAlign: TextAlign.center,
                                 ),
@@ -138,6 +146,14 @@ class Profile extends StatelessWidget {
                                 },
                               ),
                               ListTile(
+                                leading: ClipOval(
+                                  child: Image.asset(
+                                    'assets/slide.jpg',
+                                    width: 50,
+                                    height: 50,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                                 title: const Text("Cha Cha Slide",
                                   textAlign: TextAlign.center,
                                 ),
@@ -146,6 +162,14 @@ class Profile extends StatelessWidget {
                                 },
                               ),
                               ListTile(
+                                leading: ClipOval(
+                                  child: Image.asset(
+                                    'assets/drunk.jpg',
+                                    width: 50,
+                                    height: 50,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                                 title: const Text("Operational Drunk",
                                   textAlign: TextAlign.center,
                                 ),
@@ -160,6 +184,9 @@ class Profile extends StatelessWidget {
                               onPressed: () {
                                 Navigator.pop(context);
                               },
+                              style: TextButton.styleFrom(
+                                primary: Colors.red, // Set text color here
+                              ),
                               child: const Text("Cancel"),
                             ),
                           ],
