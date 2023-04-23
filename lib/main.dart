@@ -31,7 +31,7 @@ import 'house.dart';
           actions: <Widget>[
             IconButton(
               icon: const Icon(Icons.person),
-              tooltip: "Save Todo and Retrun to List",
+              tooltip: "Save Todo and Return to List",
               onPressed: () {
                 Navigator.push(
                     context,
@@ -46,192 +46,197 @@ import 'house.dart';
 
 
         body: Builder(builder: (context) {
-          return Center(
+          return SingleChildScrollView(
+            child: Center(
               child: Padding(
-            padding: const EdgeInsets.all(18.0),
-          child: SizedBox(
-            width: 500, // set the desired width of the GridButton
-            height: 300,
-            child: GridButton(
-              borderColor: Colors.lightBlue[50],
-              borderWidth: 25,
-              onPressed: (dynamic val) {},
-              items: [
-                [
-                  GridButtonItem(
-                    title: "Red",
-                    color: Colors.red.withOpacity(0.8),
-                    borderRadius: const Radius.circular(25).x,
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => const Profile()),
-                        );
-                      },
-                      child: Stack(
-                        children: [
-                          Image.asset(
-                            'assets/house.png',
-                            fit: BoxFit.cover,
-                          ),
-                          Positioned(
-                            left: 0,
-                            right: 50,
-                            bottom: 0,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(vertical: 8),
-                              alignment: Alignment.center,
-                              child: const Text(
+                padding: const EdgeInsets.all(18.0),
+                  child: SizedBox(
+                    width: 500,
+                    height: 500,
+                    child: GridButton(
+                      borderColor: Colors.lightBlue[50],
+                      borderWidth: 25,
+                      onPressed: (dynamic val) {},
+                      items: [
+                        const [
+                          GridButtonItem(
+                              child: Text(
                                 'test',
                                 style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16,
+                                  color: Colors.black,
+                                  fontSize: 32,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                          ],
 
-                  GridButtonItem(
-                    title: "Blue",
-                    color: Colors.blue.withOpacity(0.8),
-                    borderRadius: const Radius.circular(25).x,
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => const Profile()),
-                        );
-                      },
-                      child: Stack(
-                        children: [
-                          Image.asset(
-                            'assets/arrow.png',
-                            fit: BoxFit.cover,
-                          ),
-                          Positioned(
-                            left: 0,
-                            right: 50,
-                            bottom: 0,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(vertical: 8),
-                              alignment: Alignment.center,
-                              child: const Text(
-                                'test',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                          [
+                          GridButtonItem(
+                            title: "Red",
+                            color: Colors.red.withOpacity(0.8),
+                            borderRadius: const Radius.circular(25).x,
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(builder: (context) => const Profile()),
+                                );
+                              },
+                              child: Stack(
+                                children: [
+                                  Image.asset(
+                                    'assets/house.png',
+                                    fit: BoxFit.cover,
+                                  ),
+                                  Positioned(
+                                    left: 0,
+                                    right: 50,
+                                    bottom: 0,
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      alignment: Alignment.center,
+                                      child: const Text(
+                                        'test',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
-                        ],
-                      ),
-                    ),
-                  ),
 
-                ],
-
-                [
-                  GridButtonItem(
-                    title: "Green",
-                    color: Colors.green.withOpacity(0.8),
-                    borderRadius: const Radius.circular(25).x,
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => const Profile()),
-                        );
-                      },
-                      child: Stack(
-                        children: [
-                          Image.asset(
-                            'assets/arrow.png',
-                            fit: BoxFit.cover,
-                          ),
-                          Positioned(
-                            left: 0,
-                            right: 50,
-                            bottom: 0,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(vertical: 8),
-                              alignment: Alignment.center,
-                              child: const Text(
-                                'test',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                          GridButtonItem(
+                            title: "Blue",
+                            color: Colors.blue.withOpacity(0.8),
+                            borderRadius: const Radius.circular(25).x,
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(builder: (context) => const Profile()),
+                                );
+                              },
+                              child: Stack(
+                                children: [
+                                  Image.asset(
+                                    'assets/arrow.png',
+                                    fit: BoxFit.cover,
+                                  ),
+                                  Positioned(
+                                    left: 0,
+                                    right: 50,
+                                    bottom: 0,
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      alignment: Alignment.center,
+                                      child: const Text(
+                                        'test',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
-                        ],
-                      ),
-                    ),
-                  ),
 
-                  GridButtonItem(
-                    title: "Yellow",
-                    color: Colors.yellow.withOpacity(0.8),
-                    borderRadius: const Radius.circular(25).x,
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => const House()),
-                        );
-                      },
-                      child: Stack(
-                        children: [
-                          Image.asset(
-                            'assets/arrow.png',
-                            fit: BoxFit.cover,
-                          ),
-                          Positioned(
-                            left: 0,
-                            right: 50,
-                            bottom: 0,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(vertical: 8),
-                              alignment: Alignment.center,
-                              child: const Text(
-                                'test',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                        ],
+
+                        [
+                          GridButtonItem(
+                            title: "Green",
+                            color: Colors.green.withOpacity(0.8),
+                            borderRadius: const Radius.circular(25).x,
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(builder: (context) => const Profile()),
+                                );
+                              },
+                              child: Stack(
+                                children: [
+                                  Image.asset(
+                                    'assets/arrow.png',
+                                    fit: BoxFit.cover,
+                                  ),
+                                  Positioned(
+                                    left: 0,
+                                    right: 50,
+                                    bottom: 0,
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      alignment: Alignment.center,
+                                      child: const Text(
+                                        'test',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
+
+                          GridButtonItem(
+                            title: "Yellow",
+                            color: Colors.yellow.withOpacity(0.8),
+                            borderRadius: const Radius.circular(25).x,
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(builder: (context) => const House()),
+                                );
+                              },
+                              child: Stack(
+                                children: [
+                                  Image.asset(
+                                    'assets/arrow.png',
+                                    fit: BoxFit.cover,
+                                  ),
+                                  Positioned(
+                                    left: 0,
+                                    right: 50,
+                                    bottom: 0,
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      alignment: Alignment.center,
+                                      child: const Text(
+                                        'test',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+
                         ],
-                      ),
+                      ],
                     ),
-                  ),
-
-                ],
-              ],
-
-            ),
+          ),
           ),
           ),
           );
         }),
 
-
-        floatingActionButton: FloatingActionButton(
-          onPressed: null,
-          child: Image.asset('assets/arrow.png'),
-        ),
-
         backgroundColor: Colors.lightBlue[50],
       );
     }
   }
-
-
-
