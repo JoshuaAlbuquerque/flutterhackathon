@@ -109,6 +109,63 @@ class Profile extends StatelessWidget {
                   ),
                 ),
               ),
+
+              const SizedBox(height: 20.0),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 10.0),
+
+                child: ElevatedButton(
+                  onPressed: () {
+                    // Show pop-up warning
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: const Text('Warning'),
+                          content: const Text(
+                              'Are you sure you want to proceed?'),
+                          actions: [
+
+                            TextButton(
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                              style: TextButton.styleFrom(
+                                primary: Colors.red, // Set text color here
+                              ),
+                              child: const Text('Cancel'),
+                            ),
+
+                            ElevatedButton(
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.red,
+                              ),
+                              child: const Text('Proceed'),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.redAccent,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 50.0,
+                      vertical: 15.0,
+                    ),
+                  ),
+                  child: const Text(
+                    'Log Out',
+                    style: TextStyle(fontSize: 18.0),
+                  ),
+                ),
+              ),
             ],
           ),
         )
