@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_grid_button/flutter_grid_button.dart';
 import 'package:css_colors/css_colors.dart';
 import 'profile.dart';
-import 'house-yellow.dart';
+import 'house2.dart';
+import 'house4.dart';
 
  void main() {
    runApp(const MaterialApp(
@@ -162,7 +163,7 @@ import 'house-yellow.dart';
                             child: GestureDetector(
                               onTap: () {
                                 Navigator.of(context).push(
-                                  MaterialPageRoute(builder: (context) => const Profile()),
+                                  MaterialPageRoute(builder: (context) => const House2()),
                                 );
                               },
                               child: Stack(
@@ -200,7 +201,7 @@ import 'house-yellow.dart';
                             child: GestureDetector(
                               onTap: () {
                                 Navigator.of(context).push(
-                                  MaterialPageRoute(builder: (context) => const House()),
+                                  MaterialPageRoute(builder: (context) => const House4()),
                                 );
                               },
                               child: Stack(

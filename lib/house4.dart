@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:css_colors/css_colors.dart';
 import 'package:flutter_grid_button/flutter_grid_button.dart';
 
-class House extends StatelessWidget {
-  const House({Key? key}) : super(key: key);
+class House4 extends StatelessWidget {
+  const House4({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
