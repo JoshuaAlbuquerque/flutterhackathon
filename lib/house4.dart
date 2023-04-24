@@ -45,62 +45,101 @@ class House4 extends StatelessWidget {
                           onTap: () {
                             showDialog(
                               context: context,
-                              builder: (context) =>
-                                  Dialog(
-                                    backgroundColor: Colors.transparent,
-                                    child: Stack(
-                                      children: [
-                                        Container(
-                                          height: 300,
-                                          decoration: const BoxDecoration(
-                                            image: DecorationImage(
-                                              image: AssetImage(
-                                                  "assets/room2.png"),
-                                              fit: BoxFit.fill,
-                                            ),
-                                          ),
+                              builder: (context) => Dialog(
+                                backgroundColor: Colors.transparent,
+                                child: Stack(
+                                  children: [
+                                    Container(
+                                      height: 300,
+                                      decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                          image: AssetImage("assets/room2.png"),
+                                          fit: BoxFit.fill,
                                         ),
-                                        Positioned.fill(
-                                          child: Align(
-                                            alignment: Alignment.center,
-                                            child: ElevatedButton(
-                                              onPressed: () {
-                                                // Show a dropdown menu
-                                                showMenu(
-                                                  context: context,
-                                                  position: const RelativeRect
-                                                      .fromLTRB(0, 0, 0, 20),
-                                                  items: [
-                                                    const PopupMenuItem(
-                                                      value: 1,
-                                                      child: Text('TURN OFF'),
-                                                    ),
-                                                    PopupMenuItem(
-                                                      value: 2,
-                                                      child: Text(
-                                                          'Power usage : $num Watts'),
-                                                    ),
-                                                    PopupMenuItem(
-                                                      value: 3,
-                                                      child: Text(
-                                                          'Uptime - $time Hours'),
-                                                    ),
-                                                  ],
-                                                );
-                                              },
-                                              style: ElevatedButton.styleFrom(
-                                                primary: Colors.transparent,
-                                                shape: const CircleBorder(),
-                                              ),
-                                              child: const Text(
-                                                '',
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ],
+                                      ),
                                     ),
-                                  ),
+                                    Positioned.fill(
+                                      child: Align(
+                                        alignment: Alignment.center,
+                                        child: ElevatedButton(
+                                          onPressed: () {
+                                            // Show a dropdown menu
+                                            showMenu(
+                                              context: context,
+                                              position: const RelativeRect.fromLTRB(0, 0, 0, 20),
+                                              items: [
+                                                const PopupMenuItem(
+                                                  value: 1,
+                                                  child: Text('TURN OFF'),
+                                                ),
+                                                PopupMenuItem(
+                                                  value: 2,
+                                                  child: Text('Power usage : $num Watts'),
+                                                ),
+                                                PopupMenuItem(
+                                                  value: 3,
+                                                  child: Text('Uptime - $time Hours'),
+                                                ),
+                                              ],
+                                            );
+                                          },
+                                          style: ElevatedButton.styleFrom(
+                                            primary: Colors.transparent,
+                                            shape: const CircleBorder(),
+                                          ),
+                                          child: const Text(''),
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      left: 0,
+                                      right: 0,
+                                      bottom: 0,
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          ElevatedButton(
+                                            onPressed: () {
+                                              // Do something when the first button is pressed
+                                            },
+                                            style: ElevatedButton.styleFrom(
+                                              primary: Colors.grey[300],
+                                              shape: const CircleBorder(),
+                                              padding: const EdgeInsets.all(8),
+                                              minimumSize: const Size(50, 50),
+                                            ),
+                                            child: const Icon(Icons.person),
+                                          ),
+                                          ElevatedButton(
+                                            onPressed: () {
+                                              // Do something when the second button is pressed
+                                            },
+                                            style: ElevatedButton.styleFrom(
+                                              primary: Colors.grey[300],
+                                              shape: const CircleBorder(),
+                                              padding: const EdgeInsets.all(8),
+                                              minimumSize: const Size(50, 50),
+                                            ),
+                                            child: const Icon(Icons.settings),
+                                          ),
+                                          ElevatedButton(
+                                            onPressed: () {
+                                              // Do something when the third button is pressed
+                                            },
+                                            style: ElevatedButton.styleFrom(
+                                              primary: Colors.grey[300],
+                                              shape: const CircleBorder(),
+                                              padding: const EdgeInsets.all(8),
+                                              minimumSize: const Size(50, 50),
+                                            ),
+                                            child: const Icon(Icons.search),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
                             );
                           },
                           child: Container(
