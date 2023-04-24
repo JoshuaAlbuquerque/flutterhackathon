@@ -100,7 +100,24 @@ class House4 extends StatelessWidget {
                                         children: [
                                           ElevatedButton(
                                             onPressed: () {
-                                              // Do something when the first button is pressed
+                                              showMenu(
+                                                context: context,
+                                                position: const RelativeRect.fromLTRB(0, 0, 0, 20),
+                                                items: [
+                                                  const PopupMenuItem(
+                                                    value: 1,
+                                                    child: Text('TURN OFF'),
+                                                  ),
+                                                  PopupMenuItem(
+                                                    value: 2,
+                                                    child: Text('Power usage : $num Watts'),
+                                                  ),
+                                                  PopupMenuItem(
+                                                    value: 3,
+                                                    child: Text('Uptime - $time Hours'),
+                                                  ),
+                                                ],
+                                              );
                                             },
                                             style: ElevatedButton.styleFrom(
                                               primary: Colors.grey[300],
@@ -112,7 +129,24 @@ class House4 extends StatelessWidget {
                                           ),
                                           ElevatedButton(
                                             onPressed: () {
-                                              // Do something when the second button is pressed
+                                              showMenu(
+                                                context: context,
+                                                position: const RelativeRect.fromLTRB(0, 0, 0, 20),
+                                                items: [
+                                                  const PopupMenuItem(
+                                                    value: 1,
+                                                    child: Text('TURN OFF'),
+                                                  ),
+                                                  PopupMenuItem(
+                                                    value: 2,
+                                                    child: Text('Power usage : $num Watts'),
+                                                  ),
+                                                  PopupMenuItem(
+                                                    value: 3,
+                                                    child: Text('Uptime - $time Hours'),
+                                                  ),
+                                                ],
+                                              );
                                             },
                                             style: ElevatedButton.styleFrom(
                                               primary: Colors.grey[300],
@@ -124,7 +158,24 @@ class House4 extends StatelessWidget {
                                           ),
                                           ElevatedButton(
                                             onPressed: () {
-                                              // Do something when the third button is pressed
+                                              showMenu(
+                                                context: context,
+                                                position: const RelativeRect.fromLTRB(0, 0, 0, 20),
+                                                items: [
+                                                  const PopupMenuItem(
+                                                    value: 1,
+                                                    child: Text('TURN OFF'),
+                                                  ),
+                                                  PopupMenuItem(
+                                                    value: 2,
+                                                    child: Text('Power usage : $num Watts'),
+                                                  ),
+                                                  PopupMenuItem(
+                                                    value: 3,
+                                                    child: Text('Uptime - $time Hours'),
+                                                  ),
+                                                ],
+                                              );
                                             },
                                             style: ElevatedButton.styleFrom(
                                               primary: Colors.grey[300],
