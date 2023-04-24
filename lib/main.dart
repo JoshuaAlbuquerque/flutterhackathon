@@ -122,7 +122,7 @@ import 'house4.dart';
                             child: GestureDetector(
                               onTap: () {
                                 Navigator.of(context).push(
-                                  MaterialPageRoute(builder: (context) => const Profile()),
+                                  MaterialPageRoute(builder: (context) => const House2()),
                                 );
                               },
                               child: Stack(

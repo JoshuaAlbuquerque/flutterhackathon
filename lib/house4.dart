@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:css_colors/css_colors.dart';
 import 'package:flutter_grid_button/flutter_grid_button.dart';
+import 'dart:math';
+
+final random = Random();
+final num = random.nextInt(9) + 13;
+final time = random.nextInt(5) + 20;
 
 class House4 extends StatelessWidget {
   const House4({Key? key}) : super(key: key);
@@ -13,7 +17,7 @@ class House4 extends StatelessWidget {
           appBar: AppBar(
             centerTitle: true,
             title: const Text(
-              'Flutter Image Demo',
+              'Tokyo House',
               style: TextStyle(
                 fontSize: 25.0,
                 color: Colors.white,
@@ -68,13 +72,13 @@ class House4 extends StatelessWidget {
                                               value: 1,
                                               child: Text('TURN OFF'),
                                             ),
-                                            const PopupMenuItem(
+                                            PopupMenuItem(
                                               value: 2,
-                                              child: Text('Power usage - {num}'),
+                                              child: Text('Power usage : $num Watts'),
                                             ),
-                                            const PopupMenuItem(
+                                            PopupMenuItem(
                                               value: 3,
-                                              child: Text('Uptime - {num}'),
+                                              child: Text('Uptime - $time Hours'),
                                             ),
                                           ],
                                         );
