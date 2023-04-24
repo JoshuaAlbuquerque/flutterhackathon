@@ -66,15 +66,15 @@ class House extends StatelessWidget {
                                           items: [
                                             const PopupMenuItem(
                                               value: 1,
-                                              child: Text('Option 1'),
+                                              child: Text('TURN OFF'),
                                             ),
                                             const PopupMenuItem(
                                               value: 2,
-                                              child: Text('Option 2'),
+                                              child: Text('Power usage - {num}'),
                                             ),
                                             const PopupMenuItem(
                                               value: 3,
-                                              child: Text('Option 3'),
+                                              child: Text('Uptime - {num}'),
                                             ),
                                           ],
                                         );
@@ -157,16 +157,16 @@ class House extends StatelessWidget {
                                           position: const RelativeRect.fromLTRB(0, 0, 0, 20),
                                           items: [
                                             const PopupMenuItem(
-                                              child: Text('Option 1'),
                                               value: 1,
+                                              child: Text('TURN OFF'),
                                             ),
                                             const PopupMenuItem(
-                                              child: Text('Option 2'),
                                               value: 2,
+                                              child: Text('Power usage - {num}'),
                                             ),
                                             const PopupMenuItem(
-                                              child: Text('Option 3'),
                                               value: 3,
+                                              child: Text('Uptime - {num}'),
                                             ),
                                           ],
                                         );
@@ -287,16 +287,16 @@ class House extends StatelessWidget {
                                           position: const RelativeRect.fromLTRB(0, 0, 0, 20),
                                           items: [
                                             const PopupMenuItem(
-                                              child: Text('Option 1'),
                                               value: 1,
+                                              child: Text('TURN OFF'),
                                             ),
                                             const PopupMenuItem(
-                                              child: Text('Option 2'),
                                               value: 2,
+                                              child: Text('Power usage - {num}'),
                                             ),
                                             const PopupMenuItem(
-                                              child: Text('Option 3'),
                                               value: 3,
+                                              child: Text('Uptime - {num}'),
                                             ),
                                           ],
                                         );
@@ -379,16 +379,16 @@ class House extends StatelessWidget {
                                           position: const RelativeRect.fromLTRB(0, 0, 0, 20),
                                           items: [
                                             const PopupMenuItem(
-                                              child: Text('Option 1'),
                                               value: 1,
+                                              child: Text('TURN ON'),
                                             ),
                                             const PopupMenuItem(
-                                              child: Text('Option 2'),
                                               value: 2,
+                                              child: Text('Power usage - 0'),
                                             ),
                                             const PopupMenuItem(
-                                              child: Text('Option 3'),
                                               value: 3,
+                                              child: Text('Uptime - NULL'),
                                             ),
                                           ],
                                         );
