@@ -27,38 +27,42 @@ class House2 extends StatelessWidget {
           return Center(
             child: Padding(
               padding: const EdgeInsets.all(0),
-              child: Row(
+              child: Column(
                 children: [
-                  Expanded(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        GestureDetector(
-                          onTap: () {
-                            // Handle the click on the first image
-                          },
-                          child: Image.asset('assets/room2.png'),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            GestureDetector(
+                              onTap: () {
+                                // Handle the click on the first image
+                              },
+                              child: Image.asset('assets/room-down.png'),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                // Handle the click on the second image
+                              },
+                              child: Image.asset('assets/long-room-right.png'),
+                            ),
+                          ],
                         ),
-                        GestureDetector(
-                          onTap: () {
-                            // Handle the click on the second image
-                          },
-                          child: Image.asset('assets/room1.png'),
-                        ),
-                      ],
-                    ),
-                  ),
+                      ),
 
-                  Expanded(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Image.asset('assets/room2.png'),
-                        Image.asset('assets/room1.png'),
-                      ],
-                    ),
+                      Expanded(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Image.asset('assets/long-room-left.png'),
+                            Image.asset('assets/room-up.png'),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),

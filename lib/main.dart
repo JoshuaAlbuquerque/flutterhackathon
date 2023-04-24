@@ -231,17 +231,15 @@ import 'house4.dart';
                               ),
                             ),
                           ),
-
                         ],
                       ],
                     ),
-          ),
-          ),
-          ),
-          ),
+                  ),
+                ),
+              ),
+            ),
           );
         }),
-
         backgroundColor: Colors.lightBlue[50],
       );
     }
