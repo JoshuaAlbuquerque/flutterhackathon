@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_grid_button/flutter_grid_button.dart';
 import 'package:css_colors/css_colors.dart';
 import 'profile.dart';
-import 'house.dart';
+import 'house-yellow.dart';
 
  void main() {
    runApp(const MaterialApp(
@@ -53,6 +53,10 @@ import 'house.dart';
                   child: SizedBox(
                     width: 500,
                     height: 500,
+                    child: SizedBox(
+                      width: 500,
+                      height: 500,
+
                     child: GridButton(
                       borderColor: Colors.lightBlue[50],
                       borderWidth: 25,
@@ -230,6 +234,7 @@ import 'house.dart';
                         ],
                       ],
                     ),
+          ),
           ),
           ),
           ),

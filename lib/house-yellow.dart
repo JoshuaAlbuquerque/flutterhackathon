@@ -9,14 +9,18 @@ class House extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
+
           appBar: AppBar(
-            title: const Text('Flutter Image Demo',
+            centerTitle: true,
+            title: const Text(
+              'Flutter Image Demo',
               style: TextStyle(
                 fontSize: 25.0,
                 color: Colors.white,
                 fontFamily: 'Cabin',
               ),
             ),
+            backgroundColor: const Color(0xFF3C096C),
           ),
 
     body:Builder(builder: (context) {

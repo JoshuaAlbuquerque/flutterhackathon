@@ -11,14 +11,15 @@ class Profile extends StatelessWidget {
         appBar: AppBar(
           centerTitle: true,
           title: const Text(
-            'Your Profile',
+            'Profile',
             style: TextStyle(
               fontSize: 25.0,
               fontWeight: FontWeight.bold,
               color: Colors.white,
-              fontFamily: 'Pacifico',
+              fontFamily: 'Cabin',
             ),
           ),
+          
 
           backgroundColor: CSSColors.darkRed,
         ),
