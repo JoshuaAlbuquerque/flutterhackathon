@@ -6,9 +6,6 @@ final random = Random();
 final num = random.nextInt(9) + 13;
 final time = random.nextInt(5) + 20;
 
-class House4 extends StatelessWidget {
-  const House4({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -454,4 +451,3 @@ class House4 extends StatelessWidget {
    ),
   );
   }
-}
